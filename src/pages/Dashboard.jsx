@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
 import "../Dash.css";
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
-
+import CountUp from 'react-countup';
 
 export default function Dashboard() {
     return (
@@ -33,7 +33,7 @@ export default function Dashboard() {
                                                 </div>
 
                                                 <div className="paddingall">
-                                                    <span className="priceTitle">$4385</span>
+                                                    <span className="priceTitle">$<CountUp delay={0.2} end={4385.00} duration={0.3}/></span>
                                                     <br/>
                                                     <span className="priceSubTitle">Total Inventory Value</span>
                                                 </div>
@@ -51,7 +51,7 @@ export default function Dashboard() {
                                                 </div>
 
                                                 <div className="paddingall">
-                                                    <span className="priceTitle">$4385</span>
+                                                    <span className="priceTitle">$<CountUp delay={0.2} end={385656.05} duration={0.3}/></span>
                                                     <br/>
                                                     <span className="priceSubTitle">Total Inventory Value</span>
                                                 </div>
